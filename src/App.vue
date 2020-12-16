@@ -1,13 +1,18 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <p>yicen is first page</p>
     <p>i need to study javaweb and vuejs</p>
     <p>good luck for myself</p>
-    <a class="aaa" @click="click_method">today is first day</a>
+    <a class="btn-success" @click="click_method">today is first day</a>
+    <div>
+    <p class="btn btn-primary">mysql 连接 需要使用 DriverManager 去创建 连接对象</p>
+    <p>vue3.0 学习</p>
+    </div>
   </div>
 </template> 
 
 <script>
+
 export default {
   name: 'App',
   data:{
@@ -23,6 +28,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,11 +36,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-
-  
-}
-
-.aaa {
-  background-color: red;
 }
 </style>
